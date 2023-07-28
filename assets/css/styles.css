@@ -29,11 +29,17 @@ nav {
   height: 75px;
   padding: 25px 64px;
   border-bottom: 1px solid #242424;
+  background: #ffc017;
   transition: background-color 300ms linear;
   display: flex;
   justify-content: space-between;
   /* width: 90%; */
   margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 nav ul {
   display: flex;
@@ -64,7 +70,8 @@ nav ul button {
 .header-body {
   position: relative;
   padding-left: 64px;
-  padding-block: 92px;
+  padding-bottom: 92px;
+  padding-top: 167px; /*92+75px*/
   display: flex;
   justify-content: flex-start;
   overflow: hidden;

@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Spectral:wght@400;500&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0, 0, 0, 0.8);
+  /* position: relative; */
+  min-height: 100vh;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background: #ffc017;
+  border-bottom: 1px solid #242424;
+  /* display: flex; */
+}
+nav {
+  height: 75px;
+  padding: 25px 64px;
+  border-bottom: 1px solid #242424;
+  transition: background-color 300ms linear;
+  display: flex;
+  justify-content: space-between;
+  /* width: 90%; */
+  margin: auto;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 1em;
+  font-weight: 500;
+}
+nav ul button {
+  transition: background-color 300ms linear, color 300ms linear;
+  border: 1px solid rgba(25, 25, 25, 1);
+  background: rgba(25, 25, 25, 1);
+  border-radius: 99em;
+  padding: 8px 16px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+nav ul button {
+  background: #000000;
+  border-color: #242424;
+  cursor: pointer;
+}
+
+/*Header content*/
+.header-body {
+  position: relative;
+  padding-left: 64px;
+  padding-block: 92px;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.header-content {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.header-content h2 {
+  font-size: 106px;
+  color: #000000;
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 95px;
+}
+.header-content h3 {
+  font-size: 24px;
+  line-height: 24px;
+  color: #242424;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+div.svg-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 585px;
+}
+.header-body svg {
+  vertical-align: middle;
+}
+.header-body .header-content button {
+  font-size: 20px;
+  width: 213px;
+  border: 1px solid rgba(25, 25, 25, 1);
+  background: rgba(25, 25, 25, 1);
+  border-radius: 99em;
+  padding: 8px 16px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 24px;
+  text-decoration: none;
+}
+.header-body .header-content button:hover {
+  background: #000000;
+  border-color: #242424;
+  cursor: pointer;
+}

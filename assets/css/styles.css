@@ -124,6 +124,8 @@ div.svg-container {
 /*MAIN*/
 main {
   padding: 40px 64px 16px;
+  /* width: 1400px; */
+  margin-inline: auto;
 }
 div.title-trend {
   display: flex;
@@ -144,7 +146,9 @@ div.title-trend h2 {
   width: 33.333%;
   padding-inline: 16px;
   margin-bottom: 24px;
+  /* flex-wrap: wrap; */
 }
+
 .position-number {
   color: #f2f2f2;
   letter-spacing: -0.014em;
@@ -155,13 +159,14 @@ div.title-trend h2 {
   position: relative;
   top: -10px;
 }
-.trending .card-trending .card-author {
+/*CARD SECTION*/
+.card-trending .card-author {
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
   margin-bottom: 8px;
 }
-.trending .card-trending .card-author img {
+.card-trending .card-author img {
   width: 20px;
   height: 20px;
   margin-right: 3px;
@@ -170,7 +175,7 @@ div.title-trend h2 {
   border-radius: 50%;
 }
 
-.trending .card-trending .card-author p {
+.card-trending .card-author p {
   color: #242424;
   font-weight: 500;
   font-size: 13px;
@@ -193,4 +198,141 @@ div.title-trend h2 {
 }
 .v-a-m {
   vertical-align: middle;
+}
+
+/*SECTION UNDER TRENDING*/
+section {
+  display: flex;
+  /* padding-inline: 16px; */
+  padding-top: 32px;
+  justify-content: space-between;
+  gap: 16px;
+}
+article {
+  width: 65%;
+}
+article > .card-trending {
+  display: flex;
+  width: 100%;
+  margin-bottom: 48px;
+  justify-content: center;
+}
+article .card-trend-content {
+  margin-right: 20px;
+}
+article > .card-trending > img {
+  width: 30%;
+  display: block;
+  object-fit: cover;
+}
+/*Aricle list*/
+
+.card-trend-content .minor-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.type-argument {
+  padding: 2px 8px;
+  border: 1px solid #f2f2f2;
+  color: #6b6b6b;
+  border-radius: 100px;
+  background-color: #f2f2f2;
+  line-height: 20px;
+}
+/*side Section*/
+aside {
+  display: block;
+  width: 35%;
+  /* position: sticky; */
+}
+.arguments {
+  position: sticky;
+  /* z-index: 20; */
+  top: 76px;
+  right: 0;
+}
+.arguments h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #242424;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+.arguments .arguments-container {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 32px;
+  margin-bottom: 16px;
+}
+.arguments > span {
+  color: #6b6b6b;
+  margin-right: 16px;
+  line-height: 32px;
+}
+
+@media (max-width: 1000px) {
+  .trending > .card-trending {
+    width: 50%;
+  }
+
+  section {
+    flex-direction: column-reverse;
+  }
+  aside,
+  article {
+    width: 100%;
+  }
+  div.svg-container {
+    right: -218px;
+  }
+}
+
+@media (max-width: 700px) {
+  .trending > .card-trending {
+    width: 100%;
+  }
+  nav {
+    padding: 0;
+  }
+  nav > img {
+    width: 150px;
+    margin-left: 26px;
+  }
+
+  .header-body {
+    padding-left: 26px;
+  }
+  .header-content h2 {
+    font-size: 60px;
+  }
+  .header-content h3 {
+    font-size: 19px;
+  }
+  div.svg-container {
+    display: none;
+  }
+  nav ul li:nth-last-of-type(1) {
+    display: none;
+  }
+  nav ul li:nth-last-of-type(2) {
+    display: none;
+  }
+  nav ul li:nth-last-of-type(3) {
+    display: none;
+  }
+
+  /*MAIN*/
+  main {
+    padding: 0;
+  }
+  article > .card-trending > img {
+    width: 40%;
+    margin-right: 2px;
+    object-fit: cover;
+  }
+  article .card-trend-content {
+    margin-right: 10px;
+    width: 80%;
+  }
 }

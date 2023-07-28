@@ -41,6 +41,9 @@ nav {
   right: 0;
   z-index: 1;
 }
+.bianco {
+  background-color: white;
+}
 nav ul {
   display: flex;
   list-style: none;

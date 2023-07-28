@@ -6,3 +6,8 @@ document.addEventListener("scroll", (event) => {
     nav.classList.remove("bianco");
   }
 });
+
+// const svg = document.querySelectorAll("g");
+
+// console.log(svg);
+// setInterval(() => {}, 500);

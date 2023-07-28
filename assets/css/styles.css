@@ -44,6 +44,9 @@ nav {
 .bianco {
   background-color: white;
 }
+.sparisce {
+  opacity: 0;
+}
 nav ul {
   display: flex;
   list-style: none;

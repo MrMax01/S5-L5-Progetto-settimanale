@@ -221,10 +221,11 @@ article > .card-trending {
   display: flex;
   width: 100%;
   margin-bottom: 48px;
-  justify-content: center;
+  justify-content: start;
 }
 article .card-trend-content {
   margin-right: 20px;
+  flex-grow: 1;
 }
 article > .card-trending > img {
   width: 30%;

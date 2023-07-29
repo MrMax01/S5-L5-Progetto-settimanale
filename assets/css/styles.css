@@ -196,6 +196,11 @@ div.title-trend h2 {
   letter-spacing: 0;
   font-weight: 700;
   margin-bottom: 8px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .card-trend-content span {
   font-size: 13px;
@@ -226,6 +231,13 @@ article > .card-trending {
 article .card-trend-content {
   margin-right: 20px;
   flex-grow: 1;
+}
+article .card-trend-content > p {
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 article > .card-trending > img {
   width: 30%;
@@ -306,9 +318,14 @@ aside {
     width: 150px;
     margin-left: 26px;
   }
+  header {
+    margin-bottom: 20px;
+  }
 
   .header-body {
     padding-left: 26px;
+    padding-bottom: 63px;
+    padding-top: 109px;
   }
   .header-content h2 {
     font-size: 60px;
@@ -328,11 +345,15 @@ aside {
   nav ul li:nth-last-of-type(3) {
     display: none;
   }
-
+  nav ul button {
+    margin-right: 17px;
+  }
   /*MAIN*/
   main {
     padding: 0;
+    margin: 0 24px;
   }
+
   article > .card-trending > img {
     width: 40%;
     margin-right: 2px;
@@ -341,5 +362,14 @@ aside {
   article .card-trend-content {
     margin-right: 10px;
     width: 80%;
+  }
+  article .card-trend-content > p {
+    display: none;
+  }
+  .card-trend-content h2 {
+    margin-top: 23px;
+  }
+  .card-trending .card-author p {
+    line-height: 19px;
   }
 }

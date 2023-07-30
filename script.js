@@ -19,24 +19,29 @@ const pickRandomM = () => {
 
 const app = () => {
   const randomM = pickRandomM();
-  console.log(randomM);
+  // console.log(randomM);
   if (randomM.getAttribute("opacity") === "0") {
-    console.log("entra");
+    // console.log("entra");
     svgShowed.push(randomM);
     randomM.setAttribute("opacity", "1");
   } else {
     app();
   }
 };
+let flag = true;
 
 setInterval(() => {
-  if (count < cicleNumber) {
-    app();
-    count++;
-  } else {
-    while (count === 0) {
-      svgShowed[count].setAttribute("opacity", "0");
-      count--;
+  if (flag) {
+    if (count < cicleNumber) {
+      app();
+      count++;
+      if (count === cicleNumber) flag = false;
     }
+  } else {
+    // console.log(svgShowed);
+    count--;
+    svgShowed[count].setAttribute("opacity", "0");
+    svgShowed.pop();
+    if (count === 0) flag = true;
   }
 }, 100);
